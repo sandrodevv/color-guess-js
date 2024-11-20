@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(66, 66, 66);
+    height: 100%;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            transition: 1s;
+            h1 {
+                font-family: Radio Canada Big;
+            }
+            &:hover {
+                letter-spacing: 5px;
+                transition: 1s;
+            }
+            
+        }
+        .gameNavigation {
+            display: flex;
+            padding-top: 50px;
+            gap: 50px;
+            width: 100%;
+            justify-content: center;
+            .diffChanger {  
+                    #lvl {
+                        background-color: purple;
+                        font-family: Radio Canada Big;
+                        border-radius: 10px;
+                        height: 30px;
+                        width: 131px;
+                    }
+
+            }
+            .levelDisplay {
+                display: flex;
+                 align-items: center;
+                p {
+                    margin-bottom: 0px !important;
+                    font-family: Radio Canada Big;
+                }
+                .levelInd {
+                    padding-left: 5px;
+                    
+                }
+                
+            }
+            .scoreDisplay {
+                display: flex;
+                align-items: center;
+                p {
+                    margin-bottom: 0px !important;
+                    font-family: Radio Canada Big;
+                }
+                .scoreInd {
+                    padding-left: 5px;
+                }
+            }
+            .startButton {
+                display: flex;
+                align-items: center;
+                width: 9%;
+                button {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    height: 29px;
+                    font-family: Radio Canada Big;
+                    background-color: purple;
+                }
+            }
+        }
+        .rgbGuess {
+            padding-top: 50px;
+            .rgbGuesser {
+                font-family: Radio Canada Big;
+                font-size: 25px;
+            }
+            p {
+                visibility: hidden;
+            }
+        }
+    }
+    main {
+        
+        .gameName {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            h1 {
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+                
+            
+            }
+        }
+        .gameBlocks {
+            display: flex;
+            gap: 45px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .end {
+                visibility: hidden;
+            }
+            .block {
+                height: 160px;
+                width: 200px;
+                background-color: blue;
+                border-radius: 5px
+            }
+            .blockGroup {
+                display: flex;
+                gap: 30px;
+                visibility: hidden;
+            }
+        }
+    }
+}
